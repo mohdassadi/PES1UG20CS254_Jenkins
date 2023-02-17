@@ -1,14 +1,14 @@
 pipeline {
     agent any
     stages {
-        stageBuild') {
+        stage('Build') {
             steps {
             sh "make -C main"
                 echo 'Build stage completed'
             }
         }
         stage('Test') {
-            steps {
+            step
                 sh "/var/jenkins_home/workspace/PES1UG20CS254-1/main/hello_exec"
                 echo 'Testing stage completed'
             }
