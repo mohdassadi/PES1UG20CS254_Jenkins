@@ -1,7 +1,7 @@
 pipeline {
     agent any
     stages {
-        stage('Build') {
+        stag('Build') {
             steps {
             sh "make -C main"
                 echo 'Build stage completed'
